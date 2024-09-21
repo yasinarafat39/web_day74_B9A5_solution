@@ -34,6 +34,7 @@
               primary: "#1DD100",
               primary2: "rgba(29, 209, 0, 15%)",
               secondary: "#030712",
+              secondary2: "rgba(3, 7, 18, 60%)",
               couponOne: "#FFBF0F",
               couponTwo: "#F78C9C",
               paribahanArea: "#F7F8F8",
@@ -156,6 +157,7 @@
           <section
             class="bg-white px-8 py-5 mx-auto rounded-2xl shadow-sm grid grid-cols-3 gap-5"
           >
+          <!-- left side -->
             <div class="col-span-2">
               <!-- heading -->
               <h2
@@ -188,148 +190,419 @@
                   />
                 </p>
 
-                <!-- bus seat row A --> 
+                <!-- bus seat row A -->
                 <div class="grid grid-cols-12 gap-5">
-                  <p class="flex items-center justify-start font-inter font-medium text[18px]">A</p>
-                  <button class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out">A1</button>
-                  <button class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out">A2</button>
+                  <p
+                    class="flex items-center justify-start font-inter font-medium text[18px]"
+                  >
+                    A
+                  </p>
+                  <button
+                    class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out"
+                  >
+                    A1
+                  </button>
+                  <button
+                    class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out"
+                  >
+                    A2
+                  </button>
                   <p class="col-span-3"></p>
-                  <button class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out">A3</button>
-                  <button class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out">A4</button>
+                  <button
+                    class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out"
+                  >
+                    A3
+                  </button>
+                  <button
+                    class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out"
+                  >
+                    A4
+                  </button>
                 </div>
-                <!-- bus seat row B --> 
+                <!-- bus seat row B -->
                 <div class="grid grid-cols-12 gap-5">
-                  <p class="flex items-center justify-start font-inter font-medium text[18px] mt-5">B</p>
-                  <button class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5">B1</button>
-                  <button class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5">B2</button>
+                  <p
+                    class="flex items-center justify-start font-inter font-medium text[18px] mt-5"
+                  >
+                    B
+                  </p>
+                  <button
+                    class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5"
+                  >
+                    B1
+                  </button>
+                  <button
+                    class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5"
+                  >
+                    B2
+                  </button>
                   <p class="col-span-3"></p>
-                  <button class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5">B3</button>
-                  <button class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5">B4</button>
+                  <button
+                    class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5"
+                  >
+                    B3
+                  </button>
+                  <button
+                    class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5"
+                  >
+                    B4
+                  </button>
                 </div>
-                <!-- bus seat row C --> 
+                <!-- bus seat row C -->
                 <div class="grid grid-cols-12 gap-5">
-                  <p class="flex items-center justify-start font-inter font-medium text[18px] mt-5">C</p>
-                  <button class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5">C1</button>
-                  <button class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5">C2</button>
+                  <p
+                    class="flex items-center justify-start font-inter font-medium text[18px] mt-5"
+                  >
+                    C
+                  </p>
+                  <button
+                    class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5"
+                  >
+                    C1
+                  </button>
+                  <button
+                    class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5"
+                  >
+                    C2
+                  </button>
                   <p class="col-span-3"></p>
-                  <button class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5">C3</button>
-                  <button class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5">C4</button>
+                  <button
+                    class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5"
+                  >
+                    C3
+                  </button>
+                  <button
+                    class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5"
+                  >
+                    C4
+                  </button>
                 </div>
-                <!-- bus seat row D --> 
+                <!-- bus seat row D -->
                 <div class="grid grid-cols-12 gap-5">
-                  <p class="flex items-center justify-start font-inter font-medium text[18px] mt-5">D</p>
-                  <button class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5">D1</button>
-                  <button class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5">D2</button>
+                  <p
+                    class="flex items-center justify-start font-inter font-medium text[18px] mt-5"
+                  >
+                    D
+                  </p>
+                  <button
+                    class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5"
+                  >
+                    D1
+                  </button>
+                  <button
+                    class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5"
+                  >
+                    D2
+                  </button>
                   <p class="col-span-3"></p>
-                  <button class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5">D3</button>
-                  <button class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5">D4</button>
+                  <button
+                    class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5"
+                  >
+                    D3
+                  </button>
+                  <button
+                    class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5"
+                  >
+                    D4
+                  </button>
                 </div>
-                <!-- bus seat row E --> 
+                <!-- bus seat row E -->
                 <div class="grid grid-cols-12 gap-5">
-                  <p class="flex items-center justify-start font-inter font-medium text[18px] mt-5">E</p>
-                  <button class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5">E1</button>
-                  <button class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5">E2</button>
+                  <p
+                    class="flex items-center justify-start font-inter font-medium text[18px] mt-5"
+                  >
+                    E
+                  </p>
+                  <button
+                    class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5"
+                  >
+                    E1
+                  </button>
+                  <button
+                    class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5"
+                  >
+                    E2
+                  </button>
                   <p class="col-span-3"></p>
-                  <button class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5">E3</button>
-                  <button class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5">E4</button>
+                  <button
+                    class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5"
+                  >
+                    E3
+                  </button>
+                  <button
+                    class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5"
+                  >
+                    E4
+                  </button>
                 </div>
-                <!-- bus seat row F --> 
+                <!-- bus seat row F -->
                 <div class="grid grid-cols-12 gap-5">
-                  <p class="flex items-center justify-start font-inter font-medium text[18px] mt-5">F</p>
-                  <button class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5">F1</button>
-                  <button class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5">F2</button>
+                  <p
+                    class="flex items-center justify-start font-inter font-medium text[18px] mt-5"
+                  >
+                    F
+                  </p>
+                  <button
+                    class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5"
+                  >
+                    F1
+                  </button>
+                  <button
+                    class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5"
+                  >
+                    F2
+                  </button>
                   <p class="col-span-3"></p>
-                  <button class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5">F3</button>
-                  <button class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5">F4</button>
+                  <button
+                    class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5"
+                  >
+                    F3
+                  </button>
+                  <button
+                    class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5"
+                  >
+                    F4
+                  </button>
                 </div>
-                <!-- bus seat row G --> 
+                <!-- bus seat row G -->
                 <div class="grid grid-cols-12 gap-5">
-                  <p class="flex items-center justify-start font-inter font-medium text[18px] mt-5">G</p>
-                  <button class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5">G1</button>
-                  <button class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5">G2</button>
+                  <p
+                    class="flex items-center justify-start font-inter font-medium text[18px] mt-5"
+                  >
+                    G
+                  </p>
+                  <button
+                    class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5"
+                  >
+                    G1
+                  </button>
+                  <button
+                    class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5"
+                  >
+                    G2
+                  </button>
                   <p class="col-span-3"></p>
-                  <button class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5">G3</button>
-                  <button class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5">G4</button>
+                  <button
+                    class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5"
+                  >
+                    G3
+                  </button>
+                  <button
+                    class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5"
+                  >
+                    G4
+                  </button>
                 </div>
-                <!-- bus seat row H --> 
+                <!-- bus seat row H -->
                 <div class="grid grid-cols-12 gap-5">
-                  <p class="flex items-center justify-start font-inter font-medium text[18px] mt-5">H</p>
-                  <button class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5">H1</button>
-                  <button class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5">H2</button>
+                  <p
+                    class="flex items-center justify-start font-inter font-medium text[18px] mt-5"
+                  >
+                    H
+                  </p>
+                  <button
+                    class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5"
+                  >
+                    H1
+                  </button>
+                  <button
+                    class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5"
+                  >
+                    H2
+                  </button>
                   <p class="col-span-3"></p>
-                  <button class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5">H3</button>
-                  <button class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5">H4</button>
+                  <button
+                    class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5"
+                  >
+                    H3
+                  </button>
+                  <button
+                    class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5"
+                  >
+                    H4
+                  </button>
                 </div>
-                <!-- bus seat row I --> 
+                <!-- bus seat row I -->
                 <div class="grid grid-cols-12 gap-5">
-                  <p class="flex items-center justify-start font-inter font-medium text[18px] mt-5">I</p>
-                  <button class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5">I1</button>
-                  <button class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5">I2</button>
+                  <p
+                    class="flex items-center justify-start font-inter font-medium text[18px] mt-5"
+                  >
+                    I
+                  </p>
+                  <button
+                    class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5"
+                  >
+                    I1
+                  </button>
+                  <button
+                    class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5"
+                  >
+                    I2
+                  </button>
                   <p class="col-span-3"></p>
-                  <button class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5">I3</button>
-                  <button class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5">I4</button>
+                  <button
+                    class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5"
+                  >
+                    I3
+                  </button>
+                  <button
+                    class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5"
+                  >
+                    I4
+                  </button>
                 </div>
-                <!-- bus seat row J --> 
+                <!-- bus seat row J -->
                 <div class="grid grid-cols-12 gap-5">
-                  <p class="flex items-center justify-start font-inter font-medium text[18px] mt-5">J</p>
-                  <button class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5">J1</button>
-                  <button class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5">J2</button>
+                  <p
+                    class="flex items-center justify-start font-inter font-medium text[18px] mt-5"
+                  >
+                    J
+                  </p>
+                  <button
+                    class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5"
+                  >
+                    J1
+                  </button>
+                  <button
+                    class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5"
+                  >
+                    J2
+                  </button>
                   <p class="col-span-3"></p>
-                  <button class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5">J3</button>
-                  <button class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5">J4</button>
+                  <button
+                    class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5"
+                  >
+                    J3
+                  </button>
+                  <button
+                    class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out mt-5"
+                  >
+                    J4
+                  </button>
                 </div>
-                
-
-
-               
               </section>
             </div>
-            <div class="">
-               <!-- heading -->
-               <h2 class="text-2xl font-semibold text-secondary mb-6 font-raleway pb-3 border-b-2 border-[rgba(3, 7, 18, 20%)] border-dashed" > Select Your Seat </h2>
-
-               <!-- calculate area -->
-                <div class="bg-paribahanArea p-8 rounded-xl font-inter">
-                  <!-- calculate row header -->
-                  <div class="flex justify-between border-b-2 border-[rgba(3, 7, 18, 20%)] border-dashed pb-4">
-                   <p class="font-inter font-medium flex">
+            <!-- right side -->
+            <div class="font-inter">
+              <!-- heading -->
+              <h2
+                class="text-2xl font-semibold text-secondary mb-6 font-raleway pb-3 border-b-2 border-[rgba(3, 7, 18, 20%)] border-dashed"
+              >
+                Select Your Seat
+              </h2>
+              <!-- calculate area -->
+              <div class="bg-paribahanArea p-8 rounded-xl font-inter">
+                <!-- calculate row header -->
+                <div
+                  class="flex justify-between border-b-2 border-[rgba(3, 7, 18, 20%)] border-dashed pb-4"
+                >
+                  <p class="font-inter font-medium flex">
                     <span>Seat</span>
-                    <span class="bg-primary w-4 h-4 p-2 text-white flex justify-center items-center font-normal rounded-full text-sm">0</span>
-                   </p>
-                   <p class="font-inter font-medium">Class</p>
-                   <p class="font-inter font-medium">Price</p>
-                  </div>
-
-                  <ul class="space-y-5">
-                    <h3 class="text-xl font-semibold capitalize text-center mt-5 text-red-400">No Seat Booked</h3>
-                  </ul>
-                  <div class="divider mb-0"></div> <!-- divider -->
-
-                  <!-- total calculate part -->
-                  <div class="font-medium flex justify-between">
-                    <p>Total Price</p>
-                    <p>
-                      <span>BDT: </span>
-                      <span>****</span>
-                    </p>
-                  </div>
-
-                  <!-- cupon part -->
-                  <div class="flex my-5">
-                    <input type="text" placeholder="Have any cupon?" disabled  class="input w-full max-w-xs rounded-r focus:border-none focus:outline-none" />
-                    <button  disabled class="btn rounded-l bg-primary text-white hover:bg-primary hover:text-white">Apply</button>
-                  </div>
-
-                  <!-- Grand total calculate part -->
-                  <div class="font-medium flex justify-between">
-                    <p>Grand Total</p>
-                    <p>
-                      <span>BDT: </span>
-                      <span>****</span>
-                    </p>
-                  </div>
-
+                    <span
+                      class="bg-primary w-4 h-4 p-2 text-white flex justify-center items-center font-normal rounded-full text-sm"
+                      >0</span
+                    >
+                  </p>
+                  <p class="font-inter font-medium">Class</p>
+                  <p class="font-inter font-medium">Price</p>
                 </div>
+
+                <ul class="space-y-5">
+                  <h3
+                    class="text-xl font-semibold capitalize text-center mt-5 text-red-400"
+                  >
+                    No Seat Booked
+                  </h3>
+                </ul>
+                <div class="divider mb-0"></div>
+                <!-- divider -->
+
+                <!-- total calculate part -->
+                <div class="font-medium flex justify-between">
+                  <p>Total Price</p>
+                  <p>
+                    <span>BDT: </span>
+                    <span>****</span>
+                  </p>
+                </div>
+
+                <!-- cupon part -->
+                <div class="flex my-5">
+                  <input
+                    type="text"
+                    placeholder="Have any cupon?"
+                    disabled
+                    class="input w-full max-w-xs rounded-r focus:border-none focus:outline-none"
+                  />
+                  <button
+                    disabled
+                    class="btn rounded-l bg-primary text-white hover:bg-primary hover:text-white"
+                  >
+                    Apply
+                  </button>
+                </div>
+
+                <!-- Grand total calculate part -->
+                <div class="font-medium flex justify-between">
+                  <p>Grand Total</p>
+                  <p>
+                    <span>BDT: </span>
+                    <span>****</span>
+                  </p>
+                </div>
+              </div>
+
+
+              <!-- take passenger information -->
+              <form class="">
+                <!-- Passenger name  -->
+                <label class="form-control w-full mt-4">
+                  <div class="label">
+                    <span class="label-text font-semibold text-secondary"
+                      >Passenger Name*</span
+                    >
+                  </div>
+                  <input
+                    type="text"
+                    placeholder="Enter your name"
+                    class="input input-bordered w-full focus:outline-none"
+                  />
+                </label>
+                <!-- Passenger phone number  -->
+                <label class="form-control w-full mt-4">
+                  <div class="label">
+                    <span class="label-text font-semibold text-secondary"
+                      >Phone Number*</span
+                    >
+                  </div>
+                  <input
+                    type="number"
+                    placeholder="Enter your phone number"
+                    class="input input-bordered w-full focus:outline-none"
+                  />
+                </label>
+                <!-- Passenger E-mail address  -->
+                <label class="form-control w-full mt-4">
+                  <div class="label">
+                    <span class="label-text font-semibold text-secondary"
+                      >Email ID</span
+                    >
+                  </div>
+                  <input
+                    type="email"
+                    placeholder="Enter your email id"
+                    class="input input-bordered w-full focus:outline-none"
+                  />
+                </label>
+
+                <button type="submit" disabled class="btn bg-primary text-white w-full my-6 hover:bg-primary">Next</button>
+              </form>
+
+              <!-- terms and conditions -->
+              <div class="flex justify-between">
+                <a href="#" class="underline text-secondary2">Terms and Conditions</a>
+                <a href="#" class="underline text-secondary2">Cancellation Policy</a>
+              </div>
             </div>
           </section>
         </section>
