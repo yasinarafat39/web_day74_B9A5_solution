@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bus Ticket Selling</title>
+
+    <!-- google fonts -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+    <!------------------>
+
+    <!-- daisyUI and Tailwind CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!----------------->
+
+    <!-- font Awesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/bf73c86e77.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1DD100",
+              primary2: "rgba(29, 209, 0, 15%)",
+              secondary: "#030712",
+              couponOne: "#FFBF0F",
+              couponTwo: "#F78C9C",
+              paribahanArea: "#F7F8F8",
+            },
+            fontFamily: {
+              raleway: '"Raleway", system-ui',
+              inter: '"Inter", system-ui',
+            },
+            spacing: {
+              max_web_width: "1440px",
+              max_content_width: "1170px",
+            },
+          },
+        },
+      };
+    </script>
+    <!-------------------------->
+  </head>
+  <body class="max-w-max_web_width mx-auto">
+    <main class="border border-red-400">
+      <div class="bg-paribahanArea py-24">
+        <!-- bus information -->
+        <section class="max-w-max_content_width mx-auto mb-16">
+          <!-- section heading -->
+          <div class="text-center text-secondary md:w-[736px] md:mx-auto">
+            <h2 class="text-[40px] font-bold font-raleway mb-6">
+              Y.A Paribahan
+            </h2>
+            <p class="opacity-60 font-inter text-[18px]">
+              Yes, you can run unit tests and view the results directly within
+              the app. The integrated testing features allow for a streamlined .
+            </p>
+          </div>
+
+          <!-- bus details and ticket price -->
+          <section
+            class="bg-white rounded-3xl px-8 flex justify-between items-center mt-11"
+          >
+            <div class="w-[65%]">
+              <!-- bus name and availble seat -->
+              <div class="flex justify-between items-center">
+                <div>
+                  <div class="flex items-center gap-3">
+                    <img
+                      class="w-[68px] h-12"
+                      src="./images/bus-logo.png"
+                      alt="bus logo"
+                    />
+                    <div class="text-secondary">
+                      <h4 class="text-[32px] font-bold font-raleway">
+                        Greenline Paribahan
+                      </h4>
+                      <p class="opacity-60 font-inter text-[18px]">
+                        Coach-009-WEB ! AC_Business
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="text-primary bg-primary2 p-[14px] rounded-xl flex items-center gap-2 h-14"
+                >
+                  <img src="./images/seat-green.png" alt="seat" />
+                  <p class="font-inter font-medium tex-[18px]">
+                    <span>40</span> Seat left
+                  </p>
+                </div>
+              </div>
+              <!-- journey details -->
+              <div class="p-5 bg-paribahanArea rounded-2xl mt-2">
+                <div
+                  class="flex justify-between border-b-2 border-dashed py-3 text-secondary font-raleway"
+                >
+                  <p class="font-semibold opacity-60">Route</p>
+                  <p class="font-bold">Dhaka-Sylet</p>
+                </div>
+                <div
+                  class="flex justify-between border-b-2 border-dashed py-3 text-secondary font-raleway"
+                >
+                  <p class="font-semibold opacity-60">Departure Time</p>
+                  <p class="font-bold">9:00 PM</p>
+                </div>
+
+                <button class="btn mt-5 mr-5 font-inter font-medium">
+                  Boarding Point - Laxmipur
+                </button>
+                <button class="btn mt-5 mr-5 font-inter font-medium">
+                  Boarding Point - Bogura
+                </button>
+                <button class="btn mt-5 mr-5 font-inter font-medium">
+                  Boarding Point - 11 Hour
+                </button>
+              </div>
+            </div>
+
+            <!-- devider -->
+            <img
+              class="h-[21rem]"
+              src="./images/info-devider.png"
+              alt="info-devider"
+            />
+
+            <!-- price -->
+            <div class="flex w-[20%] justify-center">
+              <div class="flex flex-col items-center font-raleway">
+                <img
+                  src="./images/fare.png"
+                  alt="fare"
+                  width="48"
+                  height="48"
+                />
+                <h3 class="font-bold text-3xl">550 Taka</h3>
+                <p class="font-bold opacity-45">Per Seat</p>
+              </div>
+            </div>
+          </section>
+        </section>
+ 
+      </div>
+    </main>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
