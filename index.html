@@ -521,12 +521,14 @@
                 <!-- divider -->
 
                 <!-- total calculate part -->
-                <div class="font-medium flex justify-between">
-                  <p>Total Price</p>
-                  <p>
-                    <span>BDT: </span>
-                    <span id="totalPrice">0</span>
-                  </p>
+                <div id="total&SavingAmount" class="space-y-3">
+                  <div class="font-medium flex justify-between">
+                    <p>Total Price</p>
+                    <p>
+                      <span>BDT: </span>
+                      <span id="totalPrice">0</span>
+                    </p>
+                  </div> 
                 </div>
 
                 <!-- coupon part -->
@@ -556,7 +558,7 @@
                   <p>Grand Total</p>
                   <p>
                     <span>BDT: </span>
-                    <span>****</span>
+                    <span id="grandTotal">0</span>
                   </p>
                 </div>
               </div>
@@ -571,9 +573,11 @@
                     >
                   </div>
                   <input
+                    id="passengerName"
                     type="text"
                     placeholder="Enter your name"
                     class="input input-bordered w-full focus:outline-none"
+                    required
                   />
                 </label>
                 <!-- Passenger phone number  -->
@@ -584,9 +588,11 @@
                     >
                   </div>
                   <input
+                    id="passengerPhone"
                     type="number"
                     placeholder="Enter your phone number"
                     class="input input-bordered w-full focus:outline-none"
+                    required
                   />
                 </label>
                 <!-- Passenger E-mail address  -->
@@ -597,6 +603,7 @@
                     >
                   </div>
                   <input
+                    id="passengerEmail"
                     type="email"
                     placeholder="Enter your email id"
                     class="input input-bordered w-full focus:outline-none"
@@ -604,8 +611,8 @@
                 </label>
 
                 <button
+                  id="continueBtn"
                   type="submit" 
-                  disabled
                   class="btn bg-primary text-white w-full my-6 hover:bg-primary"
                   onclick="my_modal_1.showModal()"
                 >

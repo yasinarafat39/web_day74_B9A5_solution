@@ -1,13 +1,15 @@
 const buttons = document.querySelectorAll(".seatRow > button");
 const selectedSeat = document.getElementById("selectedSeat");
-const selectedSeatCouterDisplay = document.getElementById( "selectedSeatCouterDisplay");
+const selectedSeatCouterDisplay = document.getElementById(
+  "selectedSeatCouterDisplay"
+);
 const availbleSeat = document.getElementById("availbleSeat");
 const emptyMessage = document.getElementById("emptyMessage");
 const totalPriceField = document.getElementById("totalPrice");
 const cuoponInputField = document.getElementById("couponField");
 const cuoponBtn = document.getElementById("cuoponApplyBtn");
-
-
+const grandTotalPriceField = document.getElementById("grandTotal");
+const totalSavingAmountField = document.getElementById("total&SavingAmount");
 
 const selectedSeatCount = [];
 for (singleSeat of buttons) {
@@ -60,3 +62,57 @@ for (singleSeat of buttons) {
     }
   });
 }
+
+// coupon handle
+cuoponBtn.addEventListener("click", function () {
+  const couponValue = cuoponInputField.value;
+  let savingAmount = 0;
+
+  if (couponValue === "NEW50") {
+    // 50% discount
+    const totalPrice = parseFloat(totalPriceField.innerText);
+    const discountedAmount50 = totalPrice * 0.5;
+    const AfterDiscountAmount = (totalPrice - discountedAmount50).toFixed(2);
+    grandTotalPriceField.innerText = AfterDiscountAmount;
+    savingAmount = discountedAmount50;
+    cuoponInputField.value = "";
+    alert("Congratulations! You got 50% discount.");
+  } else if (couponValue === "COUPON20") {
+    // 20% discount
+    const totalPrice = parseFloat(totalPriceField.innerText);
+    const discountedAmount20 = totalPrice * 0.2;
+    const AfterDiscountAmount = (totalPrice - discountedAmount20).toFixed(2);
+    grandTotalPriceField.innerText = AfterDiscountAmount;
+    savingAmount = discountedAmount20;
+    cuoponInputField.value = "";
+    alert("Congratulations! You got 20% discount.");
+  } else {
+    // error (invalid coupon)
+    alert("Your Provided Coupon is not valid");
+    cuoponInputField.value = "";
+    return;
+  }
+
+  const div = document.createElement("div");
+  div.className = "font-medium flex justify-between";
+  div.innerHTML = `
+    <p>Discount</p>
+    <p>
+      <span>-BDT: </span>
+      <span>${savingAmount}</span>
+    </p>
+  `;
+  totalSavingAmountField.appendChild(div);
+});
+
+// submit ticket
+document.getElementById("continueBtn").addEventListener("click", function (event) {
+
+  event.preventDefault();
+
+  const passengerName = document.getElementById("passengerName");
+  const passengerPhone = document.getElementById("passengerPhone");
+  const passengerEmail = document.getElementById("passengerEmail");
+
+  console.log(passengerName.value, passengerPhone.value, passengerEmail.value);
+});
