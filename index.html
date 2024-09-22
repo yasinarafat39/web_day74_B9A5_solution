@@ -98,7 +98,7 @@
                 >
                   <img src="./images/seat-green.png" alt="seat" />
                   <p class="font-inter font-medium tex-[18px]">
-                    <span>40</span> Seat left
+                    <span id="availbleSeat">40</span> Seat left
                   </p>
                 </div>
               </div>
@@ -124,7 +124,7 @@
                   Boarding Point - Bogura
                 </button>
                 <button class="btn mt-5 mr-5 font-inter font-medium">
-                  Boarding Point - 11 Hour
+                  Est. Time - 11 Hour
                 </button>
               </div>
             </div>
@@ -191,13 +191,13 @@
                 </p>
 
                 <!-- bus seat row A -->
-                <div class="grid grid-cols-12 gap-5">
+                <div class="seatRow grid grid-cols-12 gap-5">
                   <p
                     class="flex items-center justify-start font-inter font-medium text[18px]"
                   >
                     A
                   </p>
-                  <button
+                  <button 
                     class="btn col-span-2 font-inter font-medium text[18px] bg-paribahanArea hover:bg-secondary hover:text-white duration-200 ease-in-out"
                   >
                     A1
@@ -220,7 +220,7 @@
                   </button>
                 </div>
                 <!-- bus seat row B -->
-                <div class="grid grid-cols-12 gap-5">
+                <div class="seatRow grid grid-cols-12 gap-5">
                   <p
                     class="flex items-center justify-start font-inter font-medium text[18px] mt-5"
                   >
@@ -249,7 +249,7 @@
                   </button>
                 </div>
                 <!-- bus seat row C -->
-                <div class="grid grid-cols-12 gap-5">
+                <div class="seatRow grid grid-cols-12 gap-5">
                   <p
                     class="flex items-center justify-start font-inter font-medium text[18px] mt-5"
                   >
@@ -278,7 +278,7 @@
                   </button>
                 </div>
                 <!-- bus seat row D -->
-                <div class="grid grid-cols-12 gap-5">
+                <div class="seatRow grid grid-cols-12 gap-5">
                   <p
                     class="flex items-center justify-start font-inter font-medium text[18px] mt-5"
                   >
@@ -307,7 +307,7 @@
                   </button>
                 </div>
                 <!-- bus seat row E -->
-                <div class="grid grid-cols-12 gap-5">
+                <div class="seatRow grid grid-cols-12 gap-5">
                   <p
                     class="flex items-center justify-start font-inter font-medium text[18px] mt-5"
                   >
@@ -336,7 +336,7 @@
                   </button>
                 </div>
                 <!-- bus seat row F -->
-                <div class="grid grid-cols-12 gap-5">
+                <div class="seatRow grid grid-cols-12 gap-5">
                   <p
                     class="flex items-center justify-start font-inter font-medium text[18px] mt-5"
                   >
@@ -365,7 +365,7 @@
                   </button>
                 </div>
                 <!-- bus seat row G -->
-                <div class="grid grid-cols-12 gap-5">
+                <div class="seatRow grid grid-cols-12 gap-5">
                   <p
                     class="flex items-center justify-start font-inter font-medium text[18px] mt-5"
                   >
@@ -394,7 +394,7 @@
                   </button>
                 </div>
                 <!-- bus seat row H -->
-                <div class="grid grid-cols-12 gap-5">
+                <div class="seatRow grid grid-cols-12 gap-5">
                   <p
                     class="flex items-center justify-start font-inter font-medium text[18px] mt-5"
                   >
@@ -423,7 +423,7 @@
                   </button>
                 </div>
                 <!-- bus seat row I -->
-                <div class="grid grid-cols-12 gap-5">
+                <div class="seatRow grid grid-cols-12 gap-5">
                   <p
                     class="flex items-center justify-start font-inter font-medium text[18px] mt-5"
                   >
@@ -452,7 +452,7 @@
                   </button>
                 </div>
                 <!-- bus seat row J -->
-                <div class="grid grid-cols-12 gap-5">
+                <div class="seatRow grid grid-cols-12 gap-5">
                   <p
                     class="flex items-center justify-start font-inter font-medium text[18px] mt-5"
                   >
@@ -499,6 +499,7 @@
                   <p class="font-inter font-medium flex">
                     <span>Seat</span>
                     <span
+                      id="selectedSeatCouterDisplay"
                       class="bg-primary w-4 h-4 p-2 text-white flex justify-center items-center font-normal rounded-full text-sm"
                       >0</span
                     >
@@ -507,13 +508,15 @@
                   <p class="font-inter font-medium">Price</p>
                 </div>
 
-                <ul class="space-y-5">
+                <div id="selectedSeat" class="space-y-5">
                   <h3
+                    id="emptyMessage"
                     class="text-xl font-semibold capitalize text-center mt-5 text-red-400"
                   >
                     No Seat Booked
-                  </h3>
-                </ul>
+                  </h3> 
+                  
+                </div>
                 <div class="divider mb-0"></div>
                 <!-- divider -->
 
@@ -522,24 +525,30 @@
                   <p>Total Price</p>
                   <p>
                     <span>BDT: </span>
-                    <span>****</span>
+                    <span id="totalPrice">0</span>
                   </p>
                 </div>
 
-                <!-- cupon part -->
-                <div class="flex my-5">
+                <!-- coupon part -->
+                <div class="flex mt-5">
                   <input
+                    id="couponField"
                     type="text"
-                    placeholder="Have any cupon?"
+                    placeholder="Have any coupon?"
                     disabled
                     class="input w-full max-w-xs rounded-r focus:border-none focus:outline-none"
                   />
                   <button
+                    id="cuoponApplyBtn"
                     disabled
                     class="btn rounded-l bg-primary text-white hover:bg-primary hover:text-white"
                   >
                     Apply
                   </button>
+                  
+                </div>
+                <div class="label mb-5">
+                  <span class="label-text-alt text-secondary2">👉 To apply coupon please buy at least 4 tickets. </span> 
                 </div>
 
                 <!-- Grand total calculate part -->
